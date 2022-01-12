@@ -1,4 +1,4 @@
-package com.javatpoint;  
+package com.samplejava;  
   
 import junit.framework.Test;  
 import junit.framework.TestCase;  
