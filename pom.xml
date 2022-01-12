@@ -6,7 +6,7 @@ http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>  
   <groupId>com.javatpoint</groupId>  
   <artifactId>CubeGenerator</artifactId>  
-  <packaging>jar</packaging>  
+  <packaging>war</packaging>  
   <version>1.0-SNAPSHOT</version>
   <packaging>war</packaging>    
   <name>CubeGenerator</name>  
