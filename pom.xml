@@ -5,10 +5,10 @@ http://maven.apache.org/maven-v4_0_0.xsd">
   
   <modelVersion>4.0.0</modelVersion>  
   <groupId>com.javatpoint</groupId>  
-  <artifactId>CubeGenerator</artifactId>  
+  <artifactId>sample-java</artifactId>  
   <packaging>jar</packaging>  
   <version>1.0-SNAPSHOT</version>
-  <name>CubeGenerator</name>  
+  <name>sample-java</name>  
   <url>http://maven.apache.org</url>  
   <dependencies>  
     <dependency>  
