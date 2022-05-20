@@ -1,27 +1,20 @@
 pipeline {
-    agent any
-
-    tools {
-        // Install the Maven version configured as "M3" and add it to the path.
-        maven "maven"
+  agent any
+  stages {
+    stage('scm') {
+      steps {
+        git 'https://github.com/rsivaseshu/sample-java.git'
+      }
     }
 
-    stages {
-        stage('scm'){
-            steps{
-                // Get some code from a GitHub repository
-                git 'https://github.com/rsivaseshu/sample-java.git'
-            }
-        }
-        stage('Build') {
-            steps {
-                // Run Maven on a Unix agent.
-                sh "mvn -Dmaven.test.failure.ignore=true clean package"
-
-                // To run Maven on a Windows agent, use
-                // bat "mvn -Dmaven.test.failure.ignore=true clean package"
-            }
-        }
-        
+    stage('Build') {
+      steps {
+        sh 'mvn -Dmaven.test.failure.ignore=true clean package'
+      }
     }
+
+  }
+  tools {
+    maven 'maven'
+  }
 }
